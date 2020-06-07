@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f34c73c93163cf45af13b23342e15926",
+    "revision": "f049c6f9df570604874f5aa568bed744",
     "url": "/camcount/index.html"
   },
   {
-    "revision": "03ecefbd3978f2d9445e",
+    "revision": "fef5a1f570fc3706046a",
     "url": "/camcount/static/css/main.16533d64.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/camcount/static/js/2.d6bb9c88.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03ecefbd3978f2d9445e",
-    "url": "/camcount/static/js/main.95691537.chunk.js"
+    "revision": "fef5a1f570fc3706046a",
+    "url": "/camcount/static/js/main.8ad61cef.chunk.js"
   },
   {
     "revision": "fb426eae431fbdb7584f",

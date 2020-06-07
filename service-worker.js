@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/camcount/precache-manifest.7fa0a0bf00d921ed677b1e4004dde34e.js"
+  "/camcount/precache-manifest.24c1dc47cdad63011670c5851ea818d4.js"
 );
 
 self.addEventListener('message', (event) => {
