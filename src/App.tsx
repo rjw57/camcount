@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
   Box,
   Grid,
-  LinearProgress,
   Typography,
 } from '@material-ui/core';
 import Moment from 'react-moment';
@@ -24,7 +23,6 @@ const App = () => {
   const generatedAt = people && new Date(people.generatedAt);
   return (
     <div className={classes.root}>
-      { isLoading && <LinearProgress /> }
       <Box p={2}>
         <Typography variant="h4" component="h1" gutterBottom>
           People in the University of Cambridge
