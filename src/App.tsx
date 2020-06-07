@@ -20,20 +20,36 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
   const classes = useStyles();
-  const {people, isLoading} = usePeople();
+  const {people, isLoading, error} = usePeople();
   const generatedAt = people && new Date(people.generatedAt);
   return (
     <div className={classes.root}>
       { isLoading && <LinearProgress /> }
-      {
-        generatedAt && <Box p={2} pb={0}>
+      <Box p={2}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          People in the University of Cambridge
+        </Typography>
+        {
+          isLoading &&
+          <Typography variant="body1" component="div">
+            Content is loading&hellip;
+          </Typography>
+        }
+        {
+          error &&
+          <Typography variant="body1" component="div">
+            There was an error loading the content.
+          </Typography>
+        }
+        {
+          generatedAt &&
           <Typography variant="body1" component="div">
             As of <Moment format="dddd, Do MMMM YYYY">{generatedAt}</Moment>,
             the University of Cambridge Information Services has active
-            accounts for the following numbers of people.
+            accounts for the following people.
           </Typography>
-        </Box>
-      }
+        }
+      </Box>
       <Box p={2}>
         <Grid container spacing={3}>
         {
