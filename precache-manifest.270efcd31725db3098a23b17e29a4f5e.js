@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fca6643dd12ca8d9848952b8122b1c5",
+    "revision": "f6b596ddb68d9449fc1c539257db7cf8",
     "url": "/camcount/index.html"
   },
   {
