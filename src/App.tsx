@@ -45,19 +45,20 @@ const App = () => {
           generatedAt &&
           <Typography variant="body1" component="div">
             As of <Moment format="dddd, Do MMMM YYYY">{generatedAt}</Moment>,
-            the University of Cambridge Information Services has active
+            the University of Cambridge Information Services had active
             accounts for the following people.
           </Typography>
         }
       </Box>
       <Box p={2}>
-        <Grid container spacing={3}>
+        <Grid container spacing={2}>
         {
-          people && people.counts.map(({count, title, description}, idx) => (
+          people && people.counts.map(({count, title, description, query}, idx) => (
             <Grid key={idx} item xs={12} sm={6} lg={4} xl={3}>
               <Box pb={2}>
                 <CountCard
                   count={count} title={title} description={description}
+                  query={query}
                 />
               </Box>
             </Grid>
