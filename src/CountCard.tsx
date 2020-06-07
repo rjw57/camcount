@@ -27,7 +27,7 @@ export default withStyles(styles)((props: Props) => {
       <Typography classes={{ root: classes.count }} variant="h3" component="div">
         { count.toLocaleString() }
       </Typography>
-      <Typography variant="body1" component="div" gutterBottom={!!description}>{ title }</Typography>
+      <Typography variant="h5" component="h2" gutterBottom={!!description}>{ title }</Typography>
       { description && <Typography variant="body2" color="textSecondary" component="div">{ description }</Typography> }
     </div>
   );
