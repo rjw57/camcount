@@ -28,7 +28,8 @@ const App = () => {
         generatedAt && <Box p={2} pb={0}>
           <Typography variant="body1" component="div">
             As of {generatedAt.toLocaleString()}, the University of Cambridge
-            Information Services knows about&hellip;
+            Information Services knows about the following people with active
+            accounts.
           </Typography>
         </Box>
       }
