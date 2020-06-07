@@ -7,6 +7,7 @@ import {
   LinearProgress,
   Typography,
 } from '@material-ui/core';
+import Moment from 'react-moment';
 
 import usePeople from './usePeople';
 import CountCard from './CountCard';
@@ -27,14 +28,14 @@ const App = () => {
       {
         generatedAt && <Box p={2} pb={0}>
           <Typography variant="body1" component="div">
-            As of {generatedAt.toLocaleString()}, the University of Cambridge
-            Information Services knows about the following people with active
-            accounts.
+            As of <Moment format="dddd, Do MMMM YYYY">{generatedAt}</Moment>,
+            the University of Cambridge Information Services has active
+            accounts for the following numbers of people.
           </Typography>
         </Box>
       }
       <Box p={2}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
         {
           people && people.counts.map(({count, title, description}, idx) => (
             <Grid key={idx} item xs={12} sm={6} lg={4} xl={3}>
